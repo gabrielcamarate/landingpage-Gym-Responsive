@@ -1,48 +1,47 @@
 <header>
-    <nav class="navbar-header">
-        <div class="navbar">
+    <nav class="main-navigation">
+        <div class="container">
             <a href="/"><img src="/MAX-GYM.svg" alt="Logo da Academia"></a>
-            <div class="buttons-middle">
-                <a href="/">Home</a>
-                <a href="/">Product</a>
-                <a href="/">Contact</a>
-            </div>
+            <ul class="navigation-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Product</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
             <a href="/" class="button-navbar">Login</a>
         </div>
     </nav>
 
-    <div class="infos">
-        <div class="square">
+    <div class="hero-section">
+        <div class="open-hours-square">
             <h2 class="open">OPEN <span class="hours">24H</span></h2>
         </div>
 
-        <div class="left">
-            <div class="blur"></div>
+        <div class="left-content">
+            <div class="blur-overlay"></div>
             
-            <h1>FORMA SEU <span class="color-vermilion-600">CORPO</span></h1>
+            <h1>FORMA SEU <span class="accent-color">CORPO</span></h1>
             
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
     
-            <div class="buttons">
+            <div class="call-to-actions">
                 <a href="/" class="learn-more button-learn-more">Learn More</a>
                 <a href="/" class="contact button-learn-more">Contact</a>
             </div>
         </div>
         
-        <div class="right">
-            <img src="/gym-image-header.jpg" alt="Imagem Transparente">
+        <div class="right-content">
+            <img src="/gym-image-header.jpg" alt="Mulher, malhando na academia.">
             <div class="gradient"></div>
             
-            <div class="blur-two"></div>
+            <div class="blur-overlay-two"></div>
         </div>
     </div>
 </header>
-
 <!-- ======================== CSS ======================== -->
 
 <style>
 
-    .blur {
+    .blur-overlay {
         position: absolute;
         width: 1920px;
         height: 1482px;
@@ -53,7 +52,7 @@
         z-index: -1;
     }
     
-    .blur-two{
+    .blur-overlay-two{
         /* blur-right */
         position: absolute;
         width: 1920px;
@@ -75,7 +74,7 @@
         z-index: -1;
     }
 
-    .right img{
+    .right-content img{
         max-width: 851px;
         max-height: 913px;
         border: solid 3px #FD4C00;
@@ -83,7 +82,8 @@
 
     /* ============== BOTÕES ============== */
     
-    .buttons {
+  
+    .call-to-actions {
         display: flex;
         margin-top: 65px;
         gap: 2rem;
@@ -130,7 +130,7 @@
         height: 93px;
     }
 
-    .infos {
+    .hero-section {
         display: flex;
         justify-content: center;
         position: relative;
@@ -139,7 +139,7 @@
     
 
 /* ============== QUADRADO ============== */
-    .square{
+    .open-hours-square{
         width: 200px;
         height: 200px;
         background: #FD4C00;
@@ -182,14 +182,14 @@
 
 /* ============== LADO ESQUERDO ============== */
 
-    .left {
+    .left-content {
         display: flex;
         flex-direction: column;
         margin-right: 95px;
         justify-content: center;
     }
 
-    .left p {
+    .left-content p {
         margin-top: 45px;
         max-width: 648px;
 
@@ -201,7 +201,7 @@
         color: white;
     }
 
-    .left h1 {
+    .left-content h1 {
         max-width: 506px;
 
         font-family: 'Inter';
@@ -215,22 +215,28 @@
 
 /* ============== COR ============== */
 
-    .color-vermilion-600{
+    .accent-color{
         color: #fd4c00;
     }
 
 /* ============= NAVBAR ============= */
 
-    .navbar-header {
+    .navigation-links{
+        list-style-type: none;
+        display: flex;
+    }
+
+
+    .main-navigation {
         padding: 30px 0px;
     }
 
 /* Aqui foi usado para mecher no home product contact */    
-    .navbar .button-navbar:hover{
+    .container .button-navbar:hover{
         color: #fff;
     }
-
-    .navbar a {
+    
+    .container a {
         display: inline-block;
         font-family: 'Inter';
         font-style: normal;
@@ -239,20 +245,20 @@
         transition: 0.2s;
     }
 
-    .navbar a:hover{
+    .container a:hover{
         display: inline-block;
         color: #FD4C00;
         scale: 1.2;
     }
 
-    .navbar{
+    .container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
     
-    .buttons-middle > a {
+    .navigation-links > li > a {
         font-size: 20px;
         margin: 30px 50px;
     }
