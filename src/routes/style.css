@@ -1,0 +1,17 @@
+/*reset css*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: var(--shark-950);
+}
+
+:root{
+    --shark-950: #1D2429;
+    --vermilion-600: #fd4c00;
+}
