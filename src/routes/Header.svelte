@@ -17,6 +17,8 @@
         </div>
 
         <div class="left">
+            <div class="blur"></div>
+            
             <h1>FORMA SEU <span class="color-vermilion-600">CORPO</span></h1>
             
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -30,6 +32,8 @@
         <div class="right">
             <img src="/gym-image-header.jpg" alt="Imagem Transparente">
             <div class="gradient"></div>
+            
+            <div class="blur-two"></div>
         </div>
     </div>
 </header>
@@ -38,8 +42,27 @@
 
 <style>
 
+    .blur {
+        position: absolute;
+        width: 1920px;
+        height: 1482px;
+
+        margin: -950px 0px 0px -1050px ;
+
+        background: radial-gradient(42.1% 42.1% at 50% 50%, rgba(255, 61, 0, 0.31) 0%, rgba(255, 121, 3, 0) 100%);
+        z-index: -1;
+    }
     
-    
+    .blur-two{
+        /* blur-right */
+        position: absolute;
+        width: 1920px;
+        height: 1482px;
+        margin: -1100px 0px 0px -600px;
+        background: radial-gradient(42.1% 42.1% at 50% 50%, rgba(255, 61, 0, 0.31) 0%, rgba(255, 121, 3, 0) 100%);
+        opacity: 0.7;
+        z-index: -1;
+    }
 
     .gradient {
         position: absolute;

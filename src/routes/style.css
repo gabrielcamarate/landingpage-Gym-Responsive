@@ -9,6 +9,7 @@
 }
 body{
     background: var(--shark-950);
+    overflow-x: hidden;
 }
 
 :root{
