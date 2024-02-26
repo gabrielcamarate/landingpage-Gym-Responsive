@@ -4,8 +4,9 @@
 	import SectionTwo from './SectionTwo.svelte';
 	import SectionThree from './SectionThree.svelte';
 	import SectionFour from './SectionFour.svelte';
+	import SectionFive from './SectionFive.svelte';
 	import SectionSix from './SectionSix.svelte';
-
+	import SectionSeven from './SectionSeven.svelte';
 	import './style.css';
 </script>
 
@@ -18,7 +19,9 @@
 	<SectionTwo />
 	<SectionThree />
 	<SectionFour />
+	<SectionFive />
 	<SectionSix />
+	<SectionSeven />
 </main>
 
 <style>
