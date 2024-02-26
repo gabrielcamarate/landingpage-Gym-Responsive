@@ -1,25 +1,30 @@
 <script>
-    import Header from "./Header.svelte"; 
-    import SectionOne from "./SectionOne.svelte"; 
-    import SectionTwo from "./SectionTwo.svelte"; 
+	import Header from './Header.svelte';
+	import SectionOne from './SectionOne.svelte';
+	import SectionTwo from './SectionTwo.svelte';
+	import SectionThree from './SectionThree.svelte';
+	import SectionFour from './SectionFour.svelte';
+	import SectionSix from './SectionSix.svelte';
 
-    import "./style.css";
+	import './style.css';
 </script>
 
 <header>
-    <Header/>
+	<Header />
 </header>
 
 <main>
-    <SectionOne/>
-    <SectionTwo/>
+	<SectionOne />
+	<SectionTwo />
+	<SectionThree />
+	<SectionFour />
+	<SectionSix />
 </main>
 
-
 <style>
-    :root{
-        --shark-950: #1D2429;
-        --vermilion-600: #fd4c00;
-        --white: #fff;
-    }
+	:root {
+		--shark-950: #1d2429;
+		--vermilion-600: #fd4c00;
+		--white: #fff;
+	}
 </style>

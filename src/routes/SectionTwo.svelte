@@ -113,7 +113,16 @@
 
 		padding: 20px;
 		width: 200px;
+
+		transition: 0.2s;
 	}
+
+	.left a:hover{
+		background: var(--white);
+		color: var(--vermilion-600);
+		scale: 1.05;
+	}
+	
 	.left p {
 		color: var(--white);
 		font-family: 'Montserrat';

@@ -66,6 +66,7 @@
 
 <style>
 	.footer-section p {
+        
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 400;
@@ -81,10 +82,10 @@
 		display: flex;
 		justify-content: center;
 		max-width: 1042px;
-
-		margin: 0 auto;
-		margin-top: 114px;
-		margin-bottom: 40px;
+		
+        margin: 0 auto;
+        margin-top: 114px;
+        margin-bottom: 40px;
 	}
 
 	.join-now {
