@@ -21,8 +21,12 @@
 	<SectionFour />
 	<SectionFive />
 	<SectionSix />
-	<SectionSeven />
+	<SectionSeven/>
 </main>
+
+<footer>
+	
+</footer>
 
 <style>
 	:root {
