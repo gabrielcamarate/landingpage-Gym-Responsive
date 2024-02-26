@@ -7,6 +7,7 @@
 	import SectionFive from './SectionFive.svelte';
 	import SectionSix from './SectionSix.svelte';
 	import SectionSeven from './SectionSeven.svelte';
+	import Footer from './Footer.svelte';
 	import './style.css';
 </script>
 
@@ -21,11 +22,11 @@
 	<SectionFour />
 	<SectionFive />
 	<SectionSix />
-	<SectionSeven/>
+	<SectionSeven />
 </main>
 
 <footer>
-	
+	<Footer/>
 </footer>
 
 <style>
